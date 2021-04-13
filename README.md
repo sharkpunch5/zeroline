@@ -1,5 +1,9 @@
-# zeroline
----
+![Image](logo.png)
+
+![Image](https://img.shields.io/github/issues/sharkpunch5/zeroline) ![Image](https://img.shields.io/github/license/sharkpunch5/zeroline) ![Image](https://img.shields.io/badge/language-pinescript-blue) ![Image](https://img.shields.io/badge/platform-tradingview-blueviolet)
+
+## Disclaimer
+Trading Forex involves a risk of loss. Please consider carefully if such trading is appropriate for you. Past performance is not indicative of future results. Content on this site are for research and informational purposes only and do not constitute investment recommendations or advice.
 
 ## Description
 This algorithm is designed to identify and trade trends in the foreign exchange (forex) market. It is constructed using a set of technical indicators that trigger trade entry and exit and uses money management to limit risk and maximise upside potential.
@@ -19,3 +23,31 @@ This algorithm and script utilise the No Nonsense Forex (NNFX) trading methodolo
 2) Add the strategy to chart using either of the following options:
 a) The Easy Way
 b) The Hard(er) Way
+
+## Usage
+
+
+Example Strategy Tester Output
+![Image](strategy_tester.png)
+
+## Configuration
+
+
+## Support
+If you have questions message me on Discord @sharkpunch in either of the following servers
+* [No Nonsense Forex](https://discord.gg/5TEY6h6)
+* [The Trading Journal](https://discord.gg/bxn7kMC)
+
+## Roadmap
+* Add option for multiple exit indicators
+* Combine Indicators to single on chart indicator
+* Simplify/Improve on chart plotting
+* Optimise indicator combiations to improve ROI!
+
+## Known Issues
+* Indicator/Strategy performance on Trading View  differs to the MT4 
+* Trailing Stop Loss on order 2 is created at 1.5x ATR when trade is entered as opposed to being fixed until take profit on first order is hit, then moved to break even, then moved to 1.5 ATR only once price moves 2x ATR from entry price (platform limitation).
+* Historical volume data for the 28 currency pairs on Trading View can occasionally chance depending on the time the stratey is loaded. (data quality issue)
+* Results will vary based on broker used, all testing on both MT4 and TradingView has used historical data from [FXCM](https://www.fxcm.com/au/)
+
+## Acknowledgements
