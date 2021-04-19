@@ -50,7 +50,7 @@ If you have questions message me on Discord @sharkpunch in either of the followi
 ## Known Issues
 * Indicator/Strategy performance on Trading View  differs to the MT4 
 * Trailing Stop Loss on scaled out order does not specifically follow the NNFX method (1.5x ATR > Break Even > Trail at 1.5x ATR after 2x ATR) rather it trails at 1.5x ATR from point of order entry due to Trading View platform limitations.
-* Historical volume data for the 28 currency pairs on Trading View can occasionally chance depending on the time the stratey is loaded. (data quality issue).
+* Historical volume data for the 28 currency pairs on Trading View can occasionally change depending on the time the strategy is loaded. (data quality issue).
 * Results will vary based on broker used, all testing on both MT4 and TradingView has used historical data from FXCM.
 
 ## Acknowledgements
