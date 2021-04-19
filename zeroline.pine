@@ -149,7 +149,7 @@ Ind_1_S_Conf = Ind_1_Check_Conf ? Didicurta < Didilonga ? true : false : true
 Ind_2_Check_Conf = input(true, title = "Indicator 2 - C2 - Confirmation")
 
 // parameters
-kuskus_range = input(20, title="Range Periods")
+kuskus_range = input(22, title="Range Periods")
 pricesmoothing = input(0.3, title="Price Smoothing")
 indexsmoothing = input(0.3, title="Index Smoothing")
 kuskus_emaLength = input(18, title="EMA Length")
@@ -243,7 +243,7 @@ Ind_3_S_Conf     = Ind_3_Check_Conf ? ntdf < filterLow  ? true : false : true
 Ind_4_Check_Trig = input(true, title = "Indicator 4 - BL - Trigger")
 Ind_4_Check_Conf = input(true, title = "Indicator 4 - BL - Confirmation")
 
-kama_length = input(title="Length", type=input.integer, defval=9)
+kama_length = input(title="Length", type=input.integer, defval=10)
 kama_fastLength = input(title="Fast EMA Length", type=input.integer, defval=2)
 kama_slowLength = input(title="Slow EMA Length", type=input.integer, defval=30)
 kama_src = close
@@ -293,8 +293,8 @@ Ind_5_Check_Exit_C1 = input(true, title = "Indicator 5 - Exit - C1 Trigger")
 Ind_5_Check_Exit_BL = input(true, title = "Indicator 5 - Exit - BL Trigger")
 Ind_5_Check_Exit = input(true, title = "Indicator 5 - Exit - Exit Trigger")
 
-oscar_len = input(title="Length", defval=9)
-oscar_slowLen = input(title="Slow Length", defval=7)
+oscar_len = input(title="Length", defval=8)
+oscar_slowLen = input(title="Slow Length", defval=10)
 smoothing = "RMA"
 OscarOfIndicator = close
 
